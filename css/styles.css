@@ -37,7 +37,7 @@ body {
 }
 
 .home-inner {
-    background-image: url(images/nature.jpg);
+    background-image: url(/images/nature.jpg);
 }
 
 .caption {
