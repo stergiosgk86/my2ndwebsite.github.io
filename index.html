@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to School Project</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/e41a5911e2.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e41a5911e2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -67,7 +73,7 @@
         </div>
 
         <div class="caption text-center">
-            <h1>Welcome to Fantastic School</h1>
+            <h1>Welcome to Private School</h1>
             <h3>Feels like home</h3>
             <a class="btn btn-outline-light btn-lg" href="#students">Get Started</a>
         </div>
@@ -81,9 +87,10 @@
     <div id="students" class="offset">
 
         <div class="narrow text-center">
-            <h3 class="heading">Students</h3>
+            <h3 class="narrow heading">Students</h3>
             <div class="heading-underline"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, cupiditate natus in dolorem repellendus
+            <p class="narrow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, cupiditate natus in
+                dolorem repellendus
                 odit ipsa explicabo adipisci nisi eius minus, officiis quisquam minima cum architecto culpa perferendis
                 facilis delectus.</p>
             <a class="btn btn-secondary btn-md" href="#">Create Student</a>
@@ -105,8 +112,8 @@
                 <div class="col-md-6 trainers">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://az801952.vo.msecnd.net/uploads/1739cdf6-1c28-4f56-87c8-2a1443368cbe.jpg"
-                                 alt="">
+                            <img src="https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                                alt="">
                         </div>
                         <div class="col-md-8">
                             <blockquote>
@@ -124,8 +131,8 @@
                 <div class="col-md-6 trainers">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://as1.ftcdn.net/jpg/01/79/77/52/500_F_179775249_mlkJtITkCQckGZ7LMEVXic0CmrvWeNVH.jpg"
-                                 alt="">
+                            <img src="https://images.unsplash.com/photo-1537193282496-388b58cc6ee3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                                alt="">
                         </div>
                         <div class="col-md-8">
                             <blockquote>
@@ -207,12 +214,13 @@
     <!-- Start Assignment Section-->
     <div id="assignments" class="offset">
 
-        <div class="jumbotron">
+        <div class="fixed-background">
             <div class="row dark text-center">
                 <div class="col-12">
                     <h3 class="heading">Assignments</h3>
                     <div class="heading-underline"></div>
                 </div>
+
                 <div class="col-md-4">
                     <h3>Individual Projects</h3>
                     <div class="assignment">
@@ -234,16 +242,20 @@
                     </div>
                     <p class="lead">Build with your team.</p>
                 </div>
-            </div>
+
+                <div class="col-12 text-center">
+                    <a class="btn btn-secondary btn-md" href="#">Create Assignments</a>
+                </div>
+
+            </div> <!-- End Row Dark -->
+
             <div class="fixed-wrap">
                 <div class="fixed">
 
                 </div>
             </div>
-            <div class="col-12 text-center">
-                <a class="btn btn-secondary btn-md" href="#">Create Assignments</a>
-            </div>
-        </div>
+
+        </div> <!-- End Fixed Background -->
 
     </div>
     <!-- End Assignment Section-->
